@@ -8,8 +8,11 @@
 victory <- function(data, x, y, type = "Bar", ..., width = NULL, height = NULL, elementId = NULL) {
 
   data <- mapply(
-    function(x, y) {
-      list(x = x, y = y)
+    function(label, value) {
+      out <- list()
+      out[[x]] <- label
+      out[[y]] <- value
+      out
     },
     data[[x]],
     data[[y]],
