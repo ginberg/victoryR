@@ -1,6 +1,6 @@
-#' <Add Title>
+#' victory
 #'
-#' <Add Description>
+#' Create Victory Chart.
 #'
 #' @import htmlwidgets
 #'
@@ -20,20 +20,20 @@ victory <- function(data, x, y, type = "Bar", ..., width = NULL, height = NULL, 
   )
 
   # describe a React component to send to the browser for rendering.
-  content <- reactR::component(
+  widget_markup <- reactR::reactMarkup(reactR::component(
     paste0("Victory", type),
     list(data = data,
          x    = x,
          y    = y)
-  )
+  ))
 
   # create widget
   htmlwidgets::createWidget(
-    name = 'victory',
-    reactR::reactMarkup(content),
-    width = width,
-    height = height,
-    package = 'victoryR',
+    name      = 'victory',
+    x         = widget_markup,
+    width     = width,
+    height    = height,
+    package   = 'victoryR',
     elementId = elementId
   )
 }

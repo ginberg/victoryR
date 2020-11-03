@@ -2,7 +2,7 @@
 % Please edit documentation in R/victory.R
 \name{victory}
 \alias{victory}
-\title{<Add Title>}
+\title{victory}
 \usage{
 victory(
   data,
@@ -16,5 +16,5 @@ victory(
 )
 }
 \description{
-<Add Description>
+Create Victory Chart.
 }

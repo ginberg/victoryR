@@ -56573,7 +56573,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 Object(reactR__WEBPACK_IMPORTED_MODULE_0__["reactWidget"])('victory', 'output', {
-  VictoryBar: victory__WEBPACK_IMPORTED_MODULE_2__["VictoryBar"]
+  VictoryChart: victory__WEBPACK_IMPORTED_MODULE_2__["VictoryChart"],
+  VictoryBar: victory__WEBPACK_IMPORTED_MODULE_2__["VictoryBar"],
+  VictoryPie: victory__WEBPACK_IMPORTED_MODULE_2__["VictoryPie"]
 });
 
 /***/ }),
