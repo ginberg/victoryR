@@ -24,7 +24,8 @@ victory <- function(data, x, y, type = "Bar", ..., width = NULL, height = NULL, 
     paste0("Victory", type),
     list(data = data,
          x    = x,
-         y    = y)
+         y    = y,
+         ...)
   ))
 
   # create widget
